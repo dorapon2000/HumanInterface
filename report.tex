@@ -1,0 +1,112 @@
+\documentclass[a4j]{jarticle}
+\title{ヒューマンインターフェースレポート}
+\author{情報科学類, 3年, 2クラス\\ 学籍番号：201311403 \ 山岡 洸瑛, Yamaoka
+Kouei}
+\date{2015/5/18(月)}
+
+%余白設定
+\setlength{\topmargin}{20mm}
+\addtolength{\topmargin}{-1in}
+\setlength{\oddsidemargin}{20mm}
+\addtolength{\oddsidemargin}{-1in}
+\setlength{\evensidemargin}{15mm}
+\addtolength{\evensidemargin}{-1in}
+\setlength{\textwidth}{170mm}
+\setlength{\textheight}{254mm}
+\setlength{\headsep}{0mm}
+\setlength{\headheight}{0mm}
+\setlength{\topskip}{0mm}
+
+
+\def\pgfsysdriver{pgfsys-dvipdfmx.def}
+
+\usepackage{ascmac}
+\usepackage{here}
+\usepackage{tikz}
+\usetikzlibrary{trees}
+\thispagestyle{empty}
+
+\usepackage{listings,jlisting}
+\renewcommand{\lstlistingname}{リスト}
+\lstset{
+basicstyle=\ttfamily\scriptsize,
+commentstyle=\textit,
+classoffset=1,
+keywordstyle=\bfseries,
+frame=tRBl,
+framesep=5pt,
+showstringspaces=false,
+numbers=left,
+stepnumber=1,
+numberstyle=\tiny,
+tabsize=2
+}
+
+\begin{document}
+\begin{titlepage}
+ \maketitle
+\end{titlepage}
+
+\section*{オペレーティングシステム}
+オペレーティングシステム(以下OSとする)とは，システムソフトウェアの1種で
+あり，現在では必須と言えるほど重要なソフトウェアである．OSには
+Microsoft Windows, Linax, OS X,など様々な種類がある．\\ \ \ \ netmarketshare.com
+によると，2015年4月現在OSのシェアはWindows: 91.11\% , Mac: 7.36\% , Linax:
+1.52\% となっている．この値はあくまで統計なので正確ではないが，
+Windowsが圧倒的であるという事は間違いないだろう．同サイトによると，バージョン別
+のOSのシェアは，Windows XP: 15.93\% , Windows Vista: 1.95 \% , Windows 7: 58.39 \% , Windows 8:
+3.50\% , Windows 8.1: 11.16\%となっている(Windows以外は省略)．\\\ \ \ 
+この統計を見ると，驚くべきことにWindows 8とwindows 8.1のシェアを足しても，
+サービスの終了したWindows XPのシェアに届かないのである．ましてやWindows
+7など遠く及ばない．やはり現在の主流はWindows 7なんだなぁ，というのはよく
+聞く話であるが，統計的に正しいことが分かる．\\\ \ \ 
+我々も友人とこういった話をすることがある．XPは良かったとか，7も使いやすいとか，
+Macの方がいいなど意見は人により様々だが，Windows 8は使いづらい，という意
+見は一致していた．統計的にもそう感じている人が多いのだろうと容易に想像できる．
+\\\ \ \ ある日，Windows 8も慣れれば使いづらいとは思わない，と言った者がい
+た\footnote{名誉のため名前は伏せる}．いつもであ
+れば気に止めることはない一言である．しかしヒューマンインターフェースの授業を受け
+た今，授業をうけながらも，慣れれば使える，などどという言葉で納得してしまったら，授業を聞
+いていないのではないかという実に不名誉な疑いをかけられてしまう．
+何より情報屋にもかかわらず，慣れれば使えるという理由でOSの改善案を考えな
+い，諦めるなどとという事は許されないだろう．従ってこれからWindows 8の問
+題点と解決案について考察していく．
+
+\section*{問題点}
+我々がWindows 8を使ってみた時に使いづらい，問題点であると感じた点を以下に列挙する．
+\begin{enumerate}
+ \item スタート画面(Modern UI \footnote{元の名称は Metro UI．2012年8月頃
+       から何故か使われなくなった．商標の問題という噂がある，})の必要性がない
+ \item スタートボタンがない
+ \item マウスやタッチパッドで操作しにくい動作がある
+ \item ストアアプリがデフォルトで全画面表示かつ自由な拡大縮小ができない
+\end{enumerate}
+
+\subsubsection*{1. スタート画面(Modern UI)の必要性がない}
+Modern UIとはWindows 8で新しく実装されたUIで，ライブタイルと呼ばれるタイ
+ルを並べて表示するものである．図?のようにアプリケーションなどをタイル状
+のパネルに表示し，それをクリックすることでアプリが起動するようになってい
+る．\\\ \ \ 
+PCを起動するとまずこの画面が表示される．ここから全てを始めろ，という
+Microsoftの意思が感じられるが，ModernUIはデスクトップPCにおいて非常に使
+いづらいものである．
+
+
+\subsection*{メモ}
+1.カスタマイズすることで便利にはなるが，タスクバーで必要十分．タッチパネ
+ルがあれば使いやすいかもしれないが，なければデスクトップの方がいい．起動
+後最初にここに飛ぶのやめて欲しい．毎回デスクトップを選択するのは面倒\\
+->自分で使うか使わないかを選択できるようにすれば良い．主体的に制御\\
+->8.1で最初からデスクトップに飛べるように設定できるようになった\\
+2.その結果，検索やシャットダウンなど，以前よりもやりにくくor面倒になった
+動作がある．しかもシャットダウンなどは必須の動作\\
+->シャットダウンについては8.1で改善スタートの位置から右クリックでできる
+ようになった\\
+->1と同様\\
+3.コントロールパネルの表示とかわかりにくい．シャットダウンすら\\
+->チャーム->設定->コントロールパネル\\
+->チャーム->設定->電源->シャットダウン\\
+4.検索，シャットダウンなど．タッチパネルがあれば...\\
+ショートカットの用意．今のままでは種類多い．->短期記憶がしにくい\\
+5.全画面邪魔，大抵2つウインドウを並べるし．画面スペースの無駄遣い
+\end{document}
