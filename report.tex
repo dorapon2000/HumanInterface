@@ -1,10 +1,10 @@
 \documentclass[a4j]{jarticle}
-\title{ヒューマンインターフェースレポート}
-\author{情報科学類, 3年, 2クラス\\ 学籍番号：201311403 \ 山岡 洸瑛, Yamaoka
-Kouei}
-\date{2015/5/18(月)}
+\title{$B%R%e!<%^%s%$%s%?!<%U%'!<%9%l%]!<%H(B}
+\author{$B>pJs2J3XN`(B, 3$BG/(B, $B3X@RHV9f!'(B201311403 \ $B;32,(B $B^+1M(B\\$B>pJs2J3XN`(B, 3
+$BG/(B, $B3X@RHV9f!'(B201311355 \ $B5WJ]ED5}M4(B}
+\date{2015/5/18($B7n(B)}
 
-%余白設定
+%$BM>Gr@_Dj(B
 \setlength{\topmargin}{20mm}
 \addtolength{\topmargin}{-1in}
 \setlength{\oddsidemargin}{20mm}
@@ -27,7 +27,7 @@ Kouei}
 \thispagestyle{empty}
 
 \usepackage{listings,jlisting}
-\renewcommand{\lstlistingname}{リスト}
+\renewcommand{\lstlistingname}{$B%j%9%H(B}
 \lstset{
 basicstyle=\ttfamily\scriptsize,
 commentstyle=\textit,
@@ -47,66 +47,66 @@ tabsize=2
  \maketitle
 \end{titlepage}
 
-\section*{オペレーティングシステム}
-オペレーティングシステム(以下OSとする)とは，システムソフトウェアの1種で
-あり，現在では必須と言えるほど重要なソフトウェアである．OSには
-Microsoft Windows, Linax, OS X,など様々な種類がある．\\ \ \ \ netmarketshare.com
-によると，2015年4月現在OSのシェアはWindows: 91.11\% , Mac: 7.36\% , Linax:
-1.52\% となっている．この値はあくまで統計なので正確ではないが，
-Windowsが圧倒的であるという事は間違いないだろう．同サイトによると，バージョン別
-のOSのシェアは，Windows XP: 15.93\% , Windows Vista: 1.95 \% , Windows 7: 58.39 \% , Windows 8:
-3.50\% , Windows 8.1: 11.16\%となっている(Windows以外は省略)．\\\ \ \ 
-この統計を見ると，驚くべきことにWindows 8とwindows 8.1のシェアを足しても，
-サービスの終了したWindows XPのシェアに届かないのである．ましてやWindows
-7など遠く及ばない．やはり現在の主流はWindows 7なんだなぁ，というのはよく
-聞く話であるが，統計的に正しいことが分かる．\\\ \ \ 
-我々も友人とこういった話をすることがある．XPは良かったとか，7も使いやすいとか，
-Macの方がいいなど意見は人により様々だが，Windows 8は使いづらい，という意
-見は一致していた．統計的にもそう感じている人が多いのだろうと容易に想像できる．
-\\\ \ \ ある日，Windows 8も慣れれば使いづらいとは思わない，と言った者がい
-た\footnote{名誉のため名前は伏せる}．いつもであ
-れば気に止めることはない一言である．しかしヒューマンインターフェースの授業を受け
-た今，授業をうけながらも，慣れれば使える，などどという言葉で納得してしまったら，授業を聞
-いていないのではないかという実に不名誉な疑いをかけられてしまう．
-何より情報屋にもかかわらず，慣れれば使えるという理由でOSの改善案を考えな
-い，諦めるなどとという事は許されないだろう．従ってこれからWindows 8の問
-題点と解決案について考察していく．
+\section*{$B%*%Z%l!<%F%#%s%0%7%9%F%`(B}
+$B%*%Z%l!<%F%#%s%0%7%9%F%`(B($B0J2<(BOS$B$H$9$k(B)$B$H$O!$%7%9%F%`%=%U%H%&%'%"$N(B1$B<o$G(B
+$B$"$j!$8=:_$G$OI,?\$H8@$($k$[$I=EMW$J%=%U%H%&%'%"$G$"$k!%(BOS$B$K$O(B
+Microsoft Windows, Linax, OS X,$B$J$IMM!9$J<oN`$,$"$k!%(B\\ \ \ \ netmarketshare.com
+$B$K$h$k$H!$(B2015$BG/(B4$B7n8=:_(BOS$B$N%7%'%"$O(BWindows: 91.11\% , Mac: 7.36\% , Linax:
+1.52\% $B$H$J$C$F$$$k!%$3$NCM$O$"$/$^$GE}7W$J$N$G@53N$G$O$J$$$,!$(B
+Windows$B$,05E]E*$G$"$k$H$$$&;v$O4V0c$$$J$$$@$m$&!%F1%5%$%H$K$h$k$H!$%P!<%8%g%sJL(B
+$B$N(BOS$B$N%7%'%"$O!$(BWindows XP: 15.93\% , Windows Vista: 1.95 \% , Windows 7: 58.39 \% , Windows 8:
+3.50\% , Windows 8.1: 11.16\%$B$H$J$C$F$$$k(B(Windows$B0J30$O>JN,(B)$B!%(B\\\ \ \ 
+$B$3$NE}7W$r8+$k$H!$6C$/$Y$-$3$H$K(BWindows 8$B$H(Bwindows 8.1$B$N%7%'%"$rB-$7$F$b!$(B
+$B%5!<%S%9$N=*N;$7$?(BWindows XP$B$N%7%'%"$KFO$+$J$$$N$G$"$k!%$^$7$F$d(BWindows
+7$B$J$I1s$/5Z$P$J$$!%$d$O$j8=:_$N<gN.$O(BWindows 7$B$J$s$@$J$!!$$H$$$&$N$O$h$/(B
+$BJ9$/OC$G$"$k$,!$E}7WE*$K@5$7$$$3$H$,J,$+$k!%(B\\\ \ \ 
+$B2f!9$bM'?M$H$3$&$$$C$?OC$r$9$k$3$H$,$"$k!%(BXP$B$ONI$+$C$?$H$+!$(B7$B$b;H$$$d$9$$$H$+!$(B
+Mac$B$NJ}$,$$$$$J$I0U8+$O?M$K$h$jMM!9$@$,!$(BWindows 8$B$O;H$$$E$i$$!$$H$$$&0U(B
+$B8+$O0lCW$7$F$$$?!%E}7WE*$K$b$=$&46$8$F$$$k?M$,B?$$$N$@$m$&$HMF0W$KA[A|$G$-$k!%(B
+\\\ \ \ $B$"$kF|!$(BWindows 8$B$b47$l$l$P;H$$$E$i$$$H$O;W$o$J$$!$$H8@$C$?<T$,$$(B
+$B$?(B\footnote{$BL>M@$N$?$aL>A0$OIz$;$k(B}$B!%$$$D$b$G$"(B
+$B$l$P5$$K;_$a$k$3$H$O$J$$0l8@$G$"$k!%$7$+$7%R%e!<%^%s%$%s%?!<%U%'!<%9$N<x6H$r<u$1(B
+$B$?:#!$<x6H$r$&$1$J$,$i$b!$47$l$l$P;H$($k!$$J$I$I$H$$$&8@MU$GG<F@$7$F$7$^$C$?$i!$<x6H$rJ9(B
+$B$$$F$$$J$$$N$G$O$J$$$+$H$$$&<B$KITL>M@$J5?$$$r$+$1$i$l$F$7$^$&!%(B
+$B2?$h$j>pJs20$K$b$+$+$o$i$:!$47$l$l$P;H$($k$H$$$&M}M3$G(BOS$B$N2~A10F$r9M$($J(B
+$B$$!$D|$a$k$J$I$H$H$$$&;v$O5v$5$l$J$$$@$m$&!%=>$C$F$3$l$+$i(BWindows 8$B$NLd(B
+$BBjE@$H2r7h0F$K$D$$$F9M;!$7$F$$$/!%(B
 
-\section*{問題点}
-我々がWindows 8を使ってみた時に使いづらい，問題点であると感じた点を以下に列挙する．
+\section*{$BLdBjE@(B}
+$B2f!9$,(BWindows 8$B$r;H$C$F$_$?;~$K;H$$$E$i$$!$LdBjE@$G$"$k$H46$8$?E@$r0J2<$KNs5s$9$k!%(B
 \begin{enumerate}
- \item スタート画面(Modern UI \footnote{元の名称は Metro UI．2012年8月頃
-       から何故か使われなくなった．商標の問題という噂がある，})の必要性がない
- \item スタートボタンがない
- \item マウスやタッチパッドで操作しにくい動作がある
- \item ストアアプリがデフォルトで全画面表示かつ自由な拡大縮小ができない
+ \item $B%9%?!<%H2hLL(B(Modern UI \footnote{$B85$NL>>N$O(B Metro UI$B!%(B2012$BG/(B8$B7n:"(B
+       $B$+$i2?8N$+;H$o$l$J$/$J$C$?!%>&I8$NLdBj$H$$$&1=$,$"$k!$(B})$B$NI,MW@-$,$J$$(B
+ \item $B%9%?!<%H%\%?%s$,$J$$(B
+ \item $B%^%&%9$d%?%C%A%Q%C%I$GA`:n$7$K$/$$F0:n$,$"$k(B
+ \item $B%9%H%"%"%W%j$,%G%U%)%k%H$GA42hLLI=<($+$D<+M3$J3HBg=L>.$,$G$-$J$$(B
 \end{enumerate}
 
-\subsubsection*{1. スタート画面(Modern UI)の必要性がない}
-Modern UIとはWindows 8で新しく実装されたUIで，ライブタイルと呼ばれるタイ
-ルを並べて表示するものである．図?のようにアプリケーションなどをタイル状
-のパネルに表示し，それをクリックすることでアプリが起動するようになってい
-る．\\\ \ \ 
-PCを起動するとまずこの画面が表示される．ここから全てを始めろ，という
-Microsoftの意思が感じられるが，ModernUIはデスクトップPCにおいて非常に使
-いづらいものである．
+\subsubsection*{1. $B%9%?!<%H2hLL(B(Modern UI)$B$NI,MW@-$,$J$$(B}
+Modern UI$B$H$O(BWindows 8$B$G?7$7$/<BAu$5$l$?(BUI$B$G!$%i%$%V%?%$%k$H8F$P$l$k%?%$(B
+$B%k$rJB$Y$FI=<($9$k$b$N$G$"$k!%?^(B?$B$N$h$&$K%"%W%j%1!<%7%g%s$J$I$r%?%$%k>u(B
+$B$N%Q%M%k$KI=<($7!$$=$l$r%/%j%C%/$9$k$3$H$G%"%W%j$,5/F0$9$k$h$&$K$J$C$F$$(B
+$B$k!%(B\\\ \ \ 
+PC$B$r5/F0$9$k$H$^$:$3$N2hLL$,I=<($5$l$k!%$3$3$+$iA4$F$r;O$a$m!$$H$$$&(B
+Microsoft$B$N0U;W$,46$8$i$l$k$,!$(BModernUI$B$O%G%9%/%H%C%W(BPC$B$K$*$$$FHs>o$K;H(B
+$B$$$E$i$$$b$N$G$"$k!%(B
 
 
-\subsection*{メモ}
-1.カスタマイズすることで便利にはなるが，タスクバーで必要十分．タッチパネ
-ルがあれば使いやすいかもしれないが，なければデスクトップの方がいい．起動
-後最初にここに飛ぶのやめて欲しい．毎回デスクトップを選択するのは面倒\\
-->自分で使うか使わないかを選択できるようにすれば良い．主体的に制御\\
-->8.1で最初からデスクトップに飛べるように設定できるようになった\\
-2.その結果，検索やシャットダウンなど，以前よりもやりにくくor面倒になった
-動作がある．しかもシャットダウンなどは必須の動作\\
-->シャットダウンについては8.1で改善スタートの位置から右クリックでできる
-ようになった\\
-->1と同様\\
-3.コントロールパネルの表示とかわかりにくい．シャットダウンすら\\
-->チャーム->設定->コントロールパネル\\
-->チャーム->設定->電源->シャットダウン\\
-4.検索，シャットダウンなど．タッチパネルがあれば...\\
-ショートカットの用意．今のままでは種類多い．->短期記憶がしにくい\\
-5.全画面邪魔，大抵2つウインドウを並べるし．画面スペースの無駄遣い
+\subsection*{$B%a%b(B}
+1.$B%+%9%?%^%$%:$9$k$3$H$GJXMx$K$O$J$k$,!$%?%9%/%P!<$GI,MW==J,!%%?%C%A%Q%M(B
+$B%k$,$"$l$P;H$$$d$9$$$+$b$7$l$J$$$,!$$J$1$l$P%G%9%/%H%C%W$NJ}$,$$$$!%5/F0(B
+$B8e:G=i$K$3$3$KHt$V$N$d$a$FM_$7$$!%Kh2s%G%9%/%H%C%W$rA*Br$9$k$N$OLLE](B\\
+->$B<+J,$G;H$&$+;H$o$J$$$+$rA*Br$G$-$k$h$&$K$9$l$PNI$$!%<gBNE*$K@)8f(B\\
+->8.1$B$G:G=i$+$i%G%9%/%H%C%W$KHt$Y$k$h$&$K@_Dj$G$-$k$h$&$K$J$C$?(B\\
+2.$B$=$N7k2L!$8!:w$d%7%c%C%H%@%&%s$J$I!$0JA0$h$j$b$d$j$K$/$/(Bor$BLLE]$K$J$C$?(B
+$BF0:n$,$"$k!%$7$+$b%7%c%C%H%@%&%s$J$I$OI,?\$NF0:n(B\\
+->$B%7%c%C%H%@%&%s$K$D$$$F$O(B8.1$B$G2~A1%9%?!<%H$N0LCV$+$i1&%/%j%C%/$G$G$-$k(B
+$B$h$&$K$J$C$?(B\\
+->1$B$HF1MM(B\\
+3.$B%3%s%H%m!<%k%Q%M%k$NI=<($H$+$o$+$j$K$/$$!%%7%c%C%H%@%&%s$9$i(B\\
+->$B%A%c!<%`(B->$B@_Dj(B->$B%3%s%H%m!<%k%Q%M%k(B\\
+->$B%A%c!<%`(B->$B@_Dj(B->$BEE8;(B->$B%7%c%C%H%@%&%s(B\\
+4.$B8!:w!$%7%c%C%H%@%&%s$J$I!%%?%C%A%Q%M%k$,$"$l$P(B...\\
+$B%7%g!<%H%+%C%H$NMQ0U!%:#$N$^$^$G$O<oN`B?$$!%(B->$BC;4|5-21$,$7$K$/$$(B\\
+5.$BA42hLL<YKb!$BgDq(B2$B$D%&%$%s%I%&$rJB$Y$k$7!%2hLL%9%Z!<%9$NL5BL8/$$(B
 \end{document}
